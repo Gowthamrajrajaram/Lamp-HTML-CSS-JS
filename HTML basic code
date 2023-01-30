@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewpost" content =" width=device-width"/>
+        <title>My test page</title>  
+    </head>
+    <body>
+
+        <h1>This is a headline</h1>
+        <h2>This is sub headline</h2>
+        <h3>This is sub-sub headline</h3>
+        <h4>This is normal font</h4>
+        <h5>This is small font</h5>
+        <h6>This is very small font</h6>
+
+        <p><h2>My friend name is Manojkumar</h2></p>
+
+        <p> CSK won the IPL trophy in 2021</p>
+        
+        <ol>
+            <li>Gowthamraj</li>
+            <li>Manoj kumar</li>
+            <li>Kavinkumar</li>
+        </ol>
+
+        <ul>
+            <li>CSK</li>
+            <li>MI</li>
+            <li>RCB</li>
+        </ul>
+         
+        <p><h3>The offered canditates list:</h3></p>
+        <ol>
+            <li>Raja</li>
+            <li>kumar</li>
+            <li>Kavin</li>
+            <p><h3>The internship selected canditates list:</h3></p>
+            <ul>
+                <li>Ananth</li>
+                <li>Bala</li>
+                <li>Gunasekar</li>
+            </ul>
+        </ol>
+
+    <p> <h3>It was a <strong>dark night</strong>. <u>Somewhere</u>, an <b>owl</b> hooted. The rain <i>lashed down</i> on the</h3></p>
+
+    <p><h2>I am counting on you.<em> Do not be late!</em></h2></p>
+    </body>
+</html>
