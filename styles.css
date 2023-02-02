@@ -1,0 +1,26 @@
+body
+{
+background-image:url(https://www.parveentravels.com/assets/images/gallery/gallery-03.png);
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+h1{
+text-align:center;
+}
+
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+}
