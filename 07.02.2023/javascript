@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewreport" content="width=device-width">
+    <title>Javascript example</title>
+    
+  </head>
+<body>
+<style>
+  /* document style won't apply to the shadow tree inside #elem (1) */
+  p { color: red; }
+</style>
+
+<div id="elem"></div>
+
+<script>
+  elem.attachShadow({mode: 'open'});
+    // shadow tree has its own style (2)
+  elem.shadowRoot.innerHTML = `
+    
+    <p>Hello, John!</p>
+  `;
+</script>
+<script>
+  function handleOnfocus(x){
+    x.style.color="green";
+    x.style,background="blue";
+  }
+  function handleOnblur(x){
+    x.style.color="yellow";
+    x.style,background="red";
+  }
+</script>
+<form id="namepass">
+  <label >Enter your user name
+  <input type="text" onfocus="handleOnfous(this)" onblur="handleOnfous(this)"> </input></label><br>
+</form>
+<input placeholder="Click here, then press and release a key." size="40" />
+<p id="log"></p>
+<script>const input = document.querySelector('input');
+  const log = document.getElementById('log');
+  
+  input.addEventListener('keyup', logKey);
+  
+  function logKey(e) {
+    log.textContent += ` ${e.code}`;
+  }
+  </script>
+</body>
+</html>
