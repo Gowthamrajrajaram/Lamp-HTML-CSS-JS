@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewreport" content="width=device-width">
+    <title>css selector</title>
+    <style>
+        *{
+            font-size: medium;
+        }
+        h1{
+            color:green;
+        }
+        #selector
+        {
+           text-align: center;
+        }
+        .name{
+            color:brown;
+        }
+        a[href*="example.com"] {
+         font-size: 2em;
+        }
+        h3 h4{
+            color:yellow;
+        }
+        div > span {
+        background-color: yellow;
+        }
+        li:first-of-type + li {
+        color: red;
+        }
+        #multicolo {
+            column-count: 2;
+         }
+         #col {
+  column-count: 2;
+}
+
+    </style>
+</head>
+<body>
+    <h1>CSS selectors types</h1>
+    <div id="selector">the street of geeting ahead is geeting started</div>
+     <div class="name">Stay Ahead</div>
+     <a href="example.com">example</a>
+    <h3>CSS selector using html</h3>
+    <h4>be carefull when updating records</h4>
+    <div>
+        <span>Span #1, in the div.
+          <span>Span #2, in the span that's in the div.</span>
+        </span>
+      </div>
+      <ul>
+        <li>5557</li>
+        <li>245224</li>
+        <li>3244</li>
+      </ul>
+  
+
+      <div id="col">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+      </div>
+      
+</body>
+</html>
