@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewreport" content="width=device-width">
+        <title>CSS basic</title>
+        <style>
+            body{
+                background-color:bisque;
+            }
+            h1{
+                color:red;
+                text-align: center;
+            }
+            p,h2{
+                font-size:small;
+            }
+            .list
+            {
+                color:blue;
+            }
+            ul.list,p.list{
+                
+                font-size:large;
+                width:15cm;
+                background-color:aqua;
+                color:brown;
+            }
+            #code
+            {
+                padding-top: 10px;
+                padding-right: 15px;
+                padding-bottom: 15px;
+                padding-left: 5px;
+                width: 15cm;
+                background-color: green;
+                color: white;
+            }
+            span {
+                border: 1px solid black;
+                background-color: yellow;
+            }
+            img{
+                width:50%;
+                height:50%;
+            }
+            button,
+            input
+            {
+              box-sizing: border-box;
+              padding: 10px;
+              margin: 10px;
+            }
+            table, td, th {
+            border: 1px solid black;
+            }
+
+            table {
+            border-collapse: collapse;
+            width: 50%;
+            }
+
+        th,td {
+           text-align: center;
+           }
+           .col
+           {
+            color:yellowgreen;
+           }
+           p {
+            font-family: "Trebuchet MS", Verdana, sans-serif;
+           }
+        </style>
+    </head>
+    <body>
+        <h1>This is basic example of css</h1>
+        <p>I want to color my text</p>
+        <h2>No problem have been detected</h2>
+        <ul class="list">
+            <li >watch</li>
+            <li>Pen</li>
+            <li>note</li>
+        </ul>
+        <p class="list">The journy of <em>thousand miles</em> begins with one step</p>
+
+        <div id="code">Bannari Amman Institute of Technology</div>
+        <p> user name: <span>Gowtham</span> <span>raj</span><span>R</span></p>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKfkJfUQF6ld_awDxeSVgtzvPLOLcWvCgs3g&usqp=CAU" alt="aspiresystem"/>
+       <form class="textinput">
+        <label>name</label>
+        <input type="text"></input>
+        <button type="submit">login</button>
+       </form>
+       <table id="batch">
+        <caption>BIT batch list</caption>
+        <tr>
+            <th>name</th>
+            <th>college</th>
+            <th>batch</th>
+        </tr>
+        <tr>
+            <td>Gowthamraj</td>
+            <td>BIT</td>
+            <td>LAMP</td>
+        </tr>
+        <tr>
+            <td>Dinesh</td>
+            <td>BIT</td>
+            <td>LAMP</td>
+        </tr>
+        <tr>
+            <td>Balaji</td>
+            <td>BIT</td>
+            <td>IAS</td>
+        </tr>
+        <tr>
+            <td>Gopinath</td>
+            <td>BIT</td>
+            <td>IAS</td>
+        </tr>
+        <tr class="col">
+            <td>Sathurganth</td>
+            <td>BIT</td>
+            <td>Java</td>
+        </tr>
+        <tr>
+            <td>Rishi</td>
+            <td>BIT</td>
+            <td>java</td>
+        </tr>
+       </table>
+       <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links">CSS styling</a></p>
+    </body>
+</html>
