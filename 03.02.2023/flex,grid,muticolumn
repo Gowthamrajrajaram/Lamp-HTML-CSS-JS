@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewreport" content="width=device-width">
+        <title>CSS topics</title>
+    <style>
+        .col{
+            column-count:2;
+            color:green;
+            font-family:tahoma;
+            text-align:justify;
+            column-gap:2em;
+            }
+            #fex{
+            display:flex;
+            flex-direction:row;
+            }
+            #fex
+            {
+             display:flex;
+             color:red;
+            }
+            p{
+            padding:10px;
+            }
+            .para1
+            {
+             background-color:green;
+             flex:1;
+             order:2;
+             }
+             .para2
+             {
+             background-color:grey;
+              flex:2;
+              order:3;
+             }
+             .para3
+             {
+             background-color:yellow;
+              flex:3;
+              order:1
+             }
+             .outer
+             {
+             background-color:orange;
+             height:250px;
+             display:flex;
+             flex-wrap:wrap;
+             justify-content:center;
+             align-items:center;
+             }
+             .box{
+             width:100px;
+             height:200px;
+             background-color:pink;
+             border:10px solid white;
+             }
+             .container {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              background-color: #2196F3;
+              padding: 10px;
+              }
+              .item {
+              background-color: rgba(255, 255, 255, 0.8);
+              border: 1px solid rgba(0, 0, 0, 0.8);
+              padding: 20px;
+              font-size: 30px;
+               text-align: center;
+              }
+              .para{
+              background-color:pink;
+              }
+              @media(min-width:810px)
+              {
+               .contain p
+               {
+                 width:30%;
+                 float:left;
+                 padding:10px;
+                 }
+                 }
+                
+    </style>
+    </head>
+    <body>
+       <div class="col" >
+        <p>Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer. 
+            Beyond mechanical use, it's important to learn how to use these technologies responsibly 
+            so that all readers might use your creations on the web. To help you achieve this, 
+            this module will cover general best practices (which are demonstrated throughout the HTML, 
+            CSS, and JavaScript topics), cross browser testing, and some tips on enforcing accessibility 
+            from the start. We'll cover accessibility in special detail.</p>
+       </div>
+       <div class="outer">
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       </div>
+       <div id="fex">
+       <p class="para1">Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer. 
+            Beyond mechanical use, it's important to learn how to use these technologies responsibly 
+            so that all readers might use your creations on the web. To help you achieve this, 
+            this module will cover general best practices (which are demonstrated throughout the HTML, 
+            CSS, and JavaScript topics), cross browser testing, and some tips on enforcing accessibility 
+            from the start. We'll cover accessibility in special detail</p>
+            <p class="para2">Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer. 
+            Beyond mechanical use, it's important to learn how to use these technologies responsibly 
+            so that all readers might use your creations on the web. To help you achieve this, 
+            this module will cover general best practices (which are demonstrated throughout the HTML, 
+            CSS, and JavaScript topics), cross browser testing, and some tips on enforcing accessibility 
+            from the start. We'll cover accessibility in special detail</p>
+            <p class="para3">Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer. 
+            Beyond mechanical use, it's important to learn how to use these technologies responsibly 
+            so that all readers might use your creations on the web. To help you achieve this, 
+            this module will cover general best practices (which are demonstrated throughout the HTML, 
+            CSS, and JavaScript topics), cross browser testing, and some tips on enforcing accessibility 
+            from the start. We'll cover accessibility in special detail</p>
+       </div>
+       <div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>  
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>  
+  <div class="item">7</div>
+  <div class="item">8</div>
+  <div class="item">9</div>  
+</div>
+<div class="contain">
+<p class="para">Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer. 
+            Beyond mechanical use, it's important to learn how to use these technologies responsibly 
+            so that all readers might use your creations on the web. To help you achieve this, 
+            this module will cover general best practices (which are demonstrated throughout the HTML, 
+            CSS, and JavaScript topics), cross browser testing, and some tips on enforcing accessibility 
+            from the start. We'll cover accessibility in special detail</p>
+            </div>
+    </body>
+</html>
