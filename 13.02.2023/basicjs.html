@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Javascript basic</title>
+</head>
+
+<body>
+    <p>username</p>
+    <script>//basic how its work
+        para = document.querySelector('p');
+        para.addEventListener('click', updateName);
+
+        function updateName() {
+            name = prompt('Enter a new name');
+            para.textContent = `username: ${name}`;
+        }
+    </script>
+    <script>//ifelse statement
+        var val = 20;
+        if (val == 10) {
+            document.write("Hello, I am practicing a Js if condition code");
+        }
+        else {
+            document.write("Hello, I am not practicing a Js if condition code");
+        }
+    </script>
+    <br>
+    <script>//nested if-else statement
+        value = 30;
+        if (val > 10) {
+            document.write("c programming");
+        }
+        else if (val > 10) {
+            document.write("c++ programming");
+        }
+        else {
+            document.write("python programming");
+        }
+    </script>
+    <br>
+    <script>//switch case statement
+        num = 1;
+        switch (num) {
+            case 1: document.write("1");
+                break;
+            case 2: document.write("2");
+                break;
+            case 3: document.write("3");
+                break;
+            case 4: document.write("4");
+                break;
+            default: document.write("0");
+                break;
+        }
+    </script>
+    <br>
+    <script>//for loop
+        for (value = 1; value != 5; value++) {
+            document.write("Hello<br>");
+
+        }
+    </script>
+    <br>
+    <button id="buttonA">click me</button>
+    <h2 id="headingA"></h2>
+    <script>
+        const buttonA = document.querySelector('#buttonA');
+        const headingA = document.querySelector('#headingA');
+
+        buttonA.onclick = () => {
+            const name = prompt('What is your name?');
+            headingA.textContent = `Welcome ${name}`;
+        }
+    </script>
+    <br>
+    <button id="buttonB">click me</button>
+    <h2 id="headingB"></h2>
+    <script>
+        const buttonb= document.querySelector('#buttonB');
+        const headingb = document.querySelector('#headingB');
+
+        buttonB.onclick = () => {
+            const name = prompt('What is your name?');
+            alert(`Hello ${name}, nice to see you!`);
+            headingB.textContent = `Welcome ${name}`;
+        }
+    </script>
+</body>
+
+</html>
