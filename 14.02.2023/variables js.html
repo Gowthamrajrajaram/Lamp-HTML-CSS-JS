@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Variables</title>
+</head>
+<body>
+    <script>//var keyword
+        var input;
+        input=5;
+        console.log(input);
+    </script>
+    <script>//let keyword
+        let inout=10;
+//inout=10;
+        console.log(inout);
+    </script>
+    <script>//const keyword
+        const imp=15;
+        console.log(imp);
+    </script>
+    <script>//typeof
+        console.log(typeof 52);
+        console.log(typeof 'green');
+        console.log(typeof true);
+        console.log(typeof 5.5);
+        
+    </script>
+    <script>//tofixed
+        function financial(x) 
+        {
+          Number.parseFloat(x).toFixed(2);
+        }
+    console.log(financial(123.456));
+    </script>
+    <script>//string
+        const str="Hello, this basic of string";
+        console.log(str);
+        const sgl = 'Single quotes.';
+        const dbl = "Double quotes";
+        console.log(sgl);
+        console.log(dbl);
+        const bigmouth = 'I\'ve got no right to take my place…';
+        console.log(bigmouth);
+    </script>
+     <script>//stsrtswith() and endswith () and finding string length
+        const browserType = 'Gowthamraj';
+        console.log(browserType.length);
+        const svalue='fun friday'
+        console.log(svalue.startsWith('fun'));
+        console.log(svalue.startsWith('n',2));
+        const str2='we are unique';
+        console.log(str2.endsWith('are'));
+        console.log(str2.endsWith('que',14));
+        console.log(str2.length);
+     </script>
+     <script> //include(),index(),uppercase(),lowercase(),slice
+        const sentence = 'The quick brown fox jumps over the lazy dog.';
+        const word = 'is';
+        console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+        const val='finding the position of a substring';
+        console.log(val.indexOf('the'));
+        const radData = 'Gowthamraj';
+        console.log(radData.toLowerCase());
+        console.log(radData.toUpperCase());
+        const Type = 'gowtham';
+        console.log(Type.slice(1, 4)); 
+
+     </script>
+</body>
+</html>     
