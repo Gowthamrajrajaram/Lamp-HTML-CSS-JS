@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Conditions in javascript</title>
+</head>
+<body>
+    <script>
+        //if-else condition
+        oneinput=5;
+        twoinput=6;
+        if(oneinput==twoinput)
+        {
+            console.log(oneinput);
+        }
+        else
+        {
+            console.log(twoinput);
+        }
+        if(oneinput<twoinput)
+        {
+            console.log(oneinput);
+        }
+        else
+        {
+            console.log(twoinput);
+        }
+        //else-if
+        if(oneinput==twoinput)
+        {
+            console.log(oneinput);
+        }
+        else if(oneinput<twoinput)
+        {
+            console.log("hello");
+        }
+        else
+        {
+           console.log(twoinput);
+        }
+    </script>
+    <label>Select your dream job:</label>
+    <select>
+         <option value="">make your choice</option>
+         <option value='IPS'>IPS</option>
+         <option value='IAS'>IAS</option>
+         <option value='CM'>CM</option>
+         <option value='CEO'>NRI</option>
+         <option value='MLA'>MLA</option>
+         <option value='PM'>PM</option>
+    </select>
+    <p></p>
+    
+    <script>
+       const select=document.querySelector('select');
+       const para=document.querySelector('p');
+       select.addEventListener('click',choice);
+       function choice()
+       {
+        const cho=select.value;
+
+        if(cho==='IPS')
+        {
+            para.textContent='Indian Police Searvice';
+        }
+        else if(cho=='IAS')
+        {
+            para.textContent='Indian Administrative Searvice';
+        }
+        else if(cho=='CM')
+        {
+            para.textContent='Chief Minister';
+        }
+        else if(cho=='CEO')
+        {
+            para.textContent='Chief Executive Officer';
+        }
+        else if(cho=='MLA')
+        {
+            para.textContent='Member of the Legislative Assembly';
+        }
+        else if(cho=='PM')
+        {
+            para.textContent='Prime Minister';
+        }
+        else
+        {
+           para.textContent='';
+        }
+    }
+    </script>
+    <label>Select your dream company:</label>
+    <select class="company">
+         <option value="">make your choice</option>
+         <option value='TCS'>TCS</option>
+         <option value='CTS'>CTS</option>
+         <option value='AS'>AS</option>
+    </select>
+    <p class="com"></p>
+    <script>//switch case
+        const select1=document.querySelector('.company');
+       const par=document.querySelector('.com');
+       document.addEventListener('click',swith);
+       function swith()
+       {
+         const choise=select1.value;
+         switch(choise)
+         {
+            case 'TCS': par.textContent= 'Tata conultency sevice';
+                      break;
+            case 'CTS': par.textContent='Cognizant Technology solution';
+                      break;
+            case 'AS':  par.textContent='Aspire System';
+                      break;
+            default : par.textContent='Wrong choice';
+                      break;
+         }
+       }
+    </script>
+</body>
+</html>
