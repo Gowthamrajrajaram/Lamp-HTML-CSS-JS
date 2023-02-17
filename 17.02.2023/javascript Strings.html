@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        //length
+        const str="We are one and we are unique";
+        console.log(str.length);
+        //at()
+        const len=5;
+        console.log(str.at(len));
+        //charAt
+        const cod=15;
+        console.log(str.charAt(cod));
+        //charCodeAt()
+        const ind=5;
+        console.log(str.charCodeAt(ind));
+        //concat()
+        const id='Gowtham';
+        const name='raj R';
+        console.log(id.concat(name));
+        //endswith()
+        console.log(str.endsWith('e'));
+        //fromcharcode()
+        console.log(String.fromCharCode(65,97,113,32,48));
+        //fromcodepoint()
+        console.log(String.fromCodePoint(97));
+        //codepointAt()
+       // console.log(String.codePointAt(90));
+       //include()
+       const js=' A Javascript are dynamic programing are language';
+       const jd='are';
+       console.log(js.includes(jd));
+       //indexof
+       console.log(js.indexOf(jd));
+       //lastindexof()
+       console.log(js.lastIndexOf(jd));
+       //match()
+       console.log(js.match(/A/));
+       console.log(js.match(/a/g));//g-global
+       console.log(js.match(/a/gi));// gi-global non case senscitive
+       //padend()
+       const srt='lenova';
+       console.log(srt.padEnd(8,8));
+       //padstart
+       console.log(srt.padStart(10,3));
+       //raw()
+       const fil=String.raw //developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw;
+       console.log(fil);
+       //repeat()
+       const rep='aspire ';
+       console.log(rep.repeat(4));
+       console.log(rep.repeat(2));
+       //repelace()
+       const repl='java script are work in html files in vscode';
+       console.log(repl.replace('in','on'));
+       //replaceall()
+       console.log(repl.replaceAll('done','work'));
+       //seach()
+       console.log(repl.search('j'));
+       console.log(repl.search(' '));
+       console.log(repl.search('i'));
+       //slice()
+       console.log(repl.slice(31));
+       console.log(repl.slice(10));
+       //split()
+       const words=repl.split('');
+       console.log(words[3]);
+       const chars=repl.split("");
+       console.log(chars[5]);
+       //startswith()
+       const str1='lenova.com';
+       console.log(str1.startsWith('l'));
+       console.log(str1.startsWith('e'));
+       //tolocaluppercase()
+       console.log(str.toLocaleUpperCase());
+       //tolocallowercae()
+       console.log(str.toLocaleLowerCase());
+       //toupercase()
+       console.log(js.toUpperCase());
+       //tolowercase()
+       console.log(js.toLowerCase());
+       //tostring()
+       console.log(srt.toString());
+       //trim()
+       const lens='   Aspire systems   ';
+       console.log(lens.trim());
+       //trimend()
+       console.log(lens.trimEnd());
+       //trimstart()
+       console.log(lens.trimStart());
+       //valueof()
+       console.log(srt.valueOf());
+    </script>
+</body>
+</html>
