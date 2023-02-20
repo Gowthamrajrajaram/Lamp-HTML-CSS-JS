@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Random color example — event handler attribute</title>
+    <style>
+      button {
+        margin: 1px;
+      };
+    </style>
+  </head>
+  <body>
+    <button>Change color</button>
+    <script>
+      const btn = document.querySelector('button');
+
+      function random(number) {
+        return Math.floor(Math.random() * (number+1));
+      }
+
+      btn.addEventListener('click', () => {
+        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+        document.body.style.backgroundColor = rndCol;
+      });
+    </script>
+    <script>
+     const person={
+        name:"Gowtahmraj R",
+        age: 21,
+        isalive :true,
+        gender:"male",
+        address:"Salem",
+        sibling:{
+            sister:"Premitha",
+            brother:"Subash",
+        }
+     };
+     console.log(person);
+     //dot notation
+     console.log(person.name);
+     console.log(person.sibling.brother);
+     console.log(person.sibling);
+     //bracket notation
+     console.log(person['gender']);
+     console.log(person['address']);
+     console.log(person['sibling']);
+     //this
+     function fun()
+     {
+        return this.name+"from"+this.address;
+     }
+     console.log(fun());
+    </script>
+  </body>
+</html>
