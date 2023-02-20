@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Looping</title>
+</head>
+<body>
+    <lable id="view">Type</lable>
+    <input type="text" id="fname"/>
+       <script>
+        const arr=[1,2,3,4,5,6,7,8,9];
+        for(let len=0;len<arr.length;len++)
+        {
+            console.log(arr[len]);
+        }
+        for(let stc=0;stc<10;stc++)
+        {
+            if(stc%2===0)
+            {
+                console.log('even No:'+stc);
+            }
+            else
+            {
+                console.log('odd No:'+stc);
+            }
+        }
+        //while
+        let len=0;
+        const num=15;
+        var prime;
+        while(len<num)
+        {
+         if((num % len) == 0) 
+         {
+         prime = 0;
+         }
+         len++;
+        }
+        if (prime === 1)
+         console.log("prime number."+num);
+        else
+         console.log("Not a prime number."+num);
+       </script>
+       <script>//functions
+        function eur()
+        {
+            alert('This is alert message');
+        }
+        eur();
+        const myarray=['I','am','working','in','aspire systems.'];
+        const visual=myarr();
+        function myarr()
+        {
+            console.log(myarray.join(' '));
+        }
+        const textbox=document.querySelector('input');
+        function logKey(event) 
+        {
+        console.log(`You pressed "${event.key}".`);
+        }
+        textbox.addEventListener('keydown', logKey);
+        var para=()=>{
+            return ('Aspire system');
+        }
+        console.log(para());
+       </script>
+</body>
+</html>
