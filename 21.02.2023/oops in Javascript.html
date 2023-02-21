@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>OOP</title>
+</head>
+
+<body>
+    <script>
+        //class and constructor
+        class person {
+            name;
+            constructor(name) {
+                this.name = name;
+            }
+            introduceself() {
+                console.log(`Hi,I am ${this.name}`);
+            }
+        }
+        const len = new person('Rajaram');
+        len.introduceself();
+    </script>
+    <br>
+    <script>
+        //inheritance
+
+        class bike {
+
+            constructor(engines, model) {
+                this.engines = engines;
+                this.model = model;
+            }
+            hero() {
+                console.log(`My bike is using ${this.engines},and it is manufactured in ${this.model}`);
+                console.log("The parent is invoked");
+            }
+        }
+        class car extends bike {
+            enginetype;
+            constructor(engines, enginetype) {
+                super(engines);
+                this.enginetype = enginetype;
+            }
+            honda() {
+                console.log(`My car is using ${this.engines},and it is type of ${this.enginetype} engine`);
+                console.log("The child is invoked");
+            }
+        };
+        const bikes = new bike('r15', 2009);
+        bikes.hero();
+        const splender = new car('5strok');
+        splender.honda();
+        // splender.hero();
+    </script>
+    <script>
+        //encapsulation
+        class Student {
+            #year;
+            constructor(name, year) {
+                this.name = name;
+                this.#year = year;
+            }
+            introduceSelf() {
+                console.log(`Hi! I'm ${this.name}, and I'm in year ${this.#year}.`);
+            }
+            canStudyArchery() {
+                return this.#year > 1;
+            }
+        }
+        const summers = new Student('Summers', 2);
+        summers.introduceSelf();
+        summers.canStudyArchery();
+    </script>
+    <script>
+        //private methods
+        class example {
+            somePublicMethod() {
+                this.#somePrivateMethod();
+            }
+            #somePrivateMethod() {
+                console.log('You called me?');
+            }
+        }
+        const Examples = new example();
+        Examples.somePublicMethod();
+    </script>
+    <script>
+
+        class Character {
+            constructor(speed) {
+                this.speed = speed
+            }
+            move = () => console.log(`I'm moving at the speed of ${this.speed}!`)
+        }
+        class Enemy extends Character {
+            constructor(name, phrase, power, speed) {
+                super(speed)
+                this.name = name
+                this.phrase = phrase
+                this.power = power
+            }
+            sayPhrase = () => console.log(this.phrase)
+            attack = () => console.log(`I'm attacking with a power of ${this.power}!`)
+        }
+        class Alien extends Enemy {
+            constructor(name, phrase, power, speed) {
+                super(name, phrase, power, speed)
+                this.species = "alien"
+            }
+            fly = () => console.log("Zzzzzziiiiiinnnnnggggg!!")
+        }
+
+        class Bug extends Enemy {
+            constructor(name, phrase, power, speed) {
+                super(name, phrase, power, speed)
+                this.species = "bug"
+            }
+            hide = () => console.log("You can't catch me now!")
+        }
+        class Robot extends Enemy {
+            constructor(name, phrase, power, speed) {
+                super(name, phrase, power, speed)
+                this.species = "robot"
+            }
+            transform = () => console.log("Optimus prime!")
+        }
+        const alien1 = new Alien("Ali", "I'm Ali the alien!", 10, 50)
+        const alien2 = new Alien("Lien", "Run for your lives!", 15, 60)
+        const bug1 = new Bug("Buggy", "Your debugger doesn't work with me!", 25, 100)
+        const bug2 = new Bug("Erik", "I drink decaf!", 5, 120)
+        const Robot1 = new Robot("Tito", "I can cook, swim and dance!", 125, 30)
+        const Robot2 = new Robot("Terminator", "Hasta la vista, baby!", 155, 40)
+        alien1.attack()
+        alien1.sayPhrase()
+        // alien1.howOld()
+        alien2.sayPhrase()
+        bug1.sayPhrase()
+        alien1.move()
+        Robot1.attack()
+        alien1.fly()
+    </script>
+
+</body>
+
+</html>
