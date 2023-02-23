@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Events</title>
+</head>
+<body>
+    <button id="cls">click</button>
+    <p class="cls"></p>
+    <form id="focus">
+        <label>Search</label>
+        <input type="text" class="foc"></input>
+    </form>
+    <ul id="mou">
+        <li> JavaScript</li>
+        <li> CSS</li>
+        <li>HTML</li>
+    </ul>
+    <form>
+        <label>Click any button on keyboard</label>
+        <input type="text" class="fom"></input>
+    </form>
+    <p class="par"></p>
+    <form id="form">
+        <label>Test field: <input type="text" /></label>
+        <br /><br />
+        <button type="reset">Reset form</button>
+      </form>
+      <p id="log"></p>
+    <script>
+        // handling a click event
+        const btn = document.querySelector('#cls')
+        const para = document.querySelector('.cls')
+        btn.addEventListener('click', random)
+        function random() {
+            para.textContent += "I am checking the click event";
+        }
+        //focus event
+        const inp = document.querySelector('input')
+        inp.addEventListener('focusin', events)
+        function events() {
+            event.target.style.background = "green";
+        }
+        //mouseover event
+        const mouse = document.querySelector("#mou")
+        mouse.addEventListener('mouseover', over)
+        function over() {
+            event.target.style.color = "orange";
+            setTimeout(() => {
+                event.target.style.color = "";
+            }, 500);
+        }
+        //keydown
+        const key = document.querySelector('.fom')
+        const paras = document.querySelector('.par')
+        key.addEventListener('keydown', down)
+        function down(e) {
+            paras.textContent += ` ${e.code}`;
+        }
+       //form event
+       function logReset(event) {
+            log.textContent = `Form reset! Timestamp: ${event.timeStamp}`;
+        }
+        const form = document.getElementById('form');
+        const log = document.getElementById('log');
+        form.addEventListener('reset', logReset);
+    </script>
+</body>
+</html>
