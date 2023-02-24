@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ES-6 basic</title>
+</head>
+
+<body>
+    <script>
+        //constants
+        const code = 10
+        {
+            var cod = 9
+            const num = 7
+            console.log(num)
+        }
+        console.log(code)
+        console.log(cod)
+        // console.log(num)
+
+
+        function myFunction() {
+            var name = "GeeksforGeeks"
+            const desc = "A computer science portal for all geeks"
+            //  desc = "Welcome to GFG"
+            console.log(name)
+            console.log(desc)
+        }
+        myFunction()
+
+        //Arrow function
+        let grade = (x, y) => console.log(x * y);
+        grade(2, 8);
+
+        let sum = (a, b) => {
+            let result = a + b;
+            return result;
+        }
+
+        let result1 = sum(5, 7);
+        console.log(result1);
+
+        //default parameter
+        function fun(m, n = 10) {
+            return m + n;
+        }
+        console.log(fun(5));
+        //rest parameter
+        function f(x, ...y) {
+            console.log(y);
+            console.log(x);
+            return x * y.length;
+        }
+
+        console.log(f(3, 'hello', true) === 6);
+        //map()
+        const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+        console.log(fruits.get("apples"))
+        //callback
+        function doStep1(init) {
+            return init + 1;
+        }
+
+        function doStep2(init) {
+            return init + 2;
+        }
+
+        function doStep3(init) {
+            return init + 3;
+        }
+
+        function doOperation() {
+            let result = 0;
+            result = doStep1(result);
+            result = doStep2(result);
+            result = doStep3(result);
+            console.log(`result: ${result}`);
+        }
+
+        doOperation();
+
+        //string interpolation
+        var customer = { name: "Foo" }
+        var card = { amount: 7, product: "Bar", unitprice: 42 }
+        var message = `Hello ${customer.name},want to buy ${card.amount} ${card.product} for a total of ${card.amount * card.unitprice} bucks?`
+        console.log(message)
+
+        //array matching
+        var list = [1, 2, 3]
+        var [a, b] = list[b, a] = [a, b]
+        console.log(list)
+        //console.log()
+
+        //object matching
+        let options = {
+            title: "Menu",
+            width: 100,
+            height: 200
+        };
+
+        let { title, width, height } = options;
+        let {width: w, height: h, title:t} = options;
+
+        console.log(title);  
+        console.log(width);  
+        console.log(height); 
+
+        console.log(t);  
+        console.log(w);  
+        console.log(h); 
+    </script>
+</body>
+
+</html>
